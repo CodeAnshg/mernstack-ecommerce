@@ -38,7 +38,14 @@
     position: relative;
     display: inline-block;
   }
-  
+  .dropdown{
+    border: none;
+    background-color: #ffffff00;
+    color: white;
+  }
+  .dropdown option{
+    color: black;
+  }
   .search-input {
     padding: 10px;
     padding-right: 40px; /* Space for the icon */
