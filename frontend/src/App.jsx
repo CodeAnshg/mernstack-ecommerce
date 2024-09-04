@@ -1,26 +1,16 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { BrowserRouter as Routers ,Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./footer/Footer";
-import AboutUs from "./companydetails/AboutUs";
-import PrivacyPolicy from "./companydetails/PrivacyPolicy"; // Assuming you have this component
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Footer from './footer/Footer'
 
 const App = () => {
-
-
   return (
     <>
-    <Routers>
-      <Navbar />
-      <Routes>
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/privacy&policy" element={ <PrivacyPolicy/>} />
-      </Routes>
-      <Footer />
-      </Routers>
-      </>
-  );
-};
+      <div>
+        <Navbar/>
+        <Footer/>
+      </div>
+    </>
+  )
+}
 
-export default App;
+export default App
