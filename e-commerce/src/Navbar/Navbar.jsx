@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import {Link} from "react-router-dom"
 import { FaOpencart } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { RiAccountCircleFill } from "react-icons/ri";
@@ -51,7 +52,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="navbar-button">
-            <span className='arrow'> <RiAccountCircleFill /> Account</span>
+            <span className='arrow'> <RiAccountCircleFill /> <Link to="/login" >Account</Link></span>
           </div>
           <div className="navbar-button">
             <span className='arrow'> <FaOpencart /> Cart</span>
