@@ -45,8 +45,8 @@ const Navbar = () => {
           <div className="navbar-button">What's New</div>
           <div className="navbar-button">Delivery</div>
           <div className="nav2-search">
-            <div class="search-box">
-              <input type="text" class="search-input" placeholder="Search..." />
+            <div className="search-box">
+              <input type="text" className="search-input" placeholder="Search..." />
               <IoIosSearch className="search-btn" />
             </div>
           </div>
