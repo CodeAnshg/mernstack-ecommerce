@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const { CgDetailsLess } = require("react-icons/cg");
+// const { CgDetailsLess } = require("react-icons/cg");
 const details = require("../models/companyDetail")
 
 const getAllDetails=(req,res)=>{
