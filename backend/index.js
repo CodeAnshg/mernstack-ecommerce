@@ -4,10 +4,11 @@ const app = express()  //function
 const bodyParser=require('body-parser') 
 const mongoose= require('mongoose')
 const detailRoutes= require('./routes/companyDetailRoute')
+const userRoutes=require('./routes/usersRoutes')
 
 const cors=require("cors")
 app.use(cors());
-
+app.use(express.json());
 // app.get("/user",(req,res)=>{
 //     res.send("hello jkworld")
 // })
@@ -22,8 +23,9 @@ mongoose.connect("mongodb+srv://guptaansh912:guptaansh912@cluster0.kc57p0u.mongo
 
 
 app.use("/" , detailRoutes )
+app.use("/",userRoutes)
 
 
 app.listen(3000,()=>{
-    console.log("yes")
+    console.log("port to localhost:3000 ")
 })
